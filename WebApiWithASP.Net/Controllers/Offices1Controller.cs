@@ -16,10 +16,15 @@ namespace WebApiWithASP.Net.Controllers
     {
         private WebApiWithASPNetContext db = new WebApiWithASPNetContext();
 
+        int page_size = 5;
         // GET: Offices1
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(int page = 0)
         {
-            var offices = db.Offices.Include(o => o.Employee);
+            var offices = db.Offices.Include(a => a.Employee).OrderBy(a => a.Location)
+                .Skip(page * page_size)
+                .Take(page_size);
+            
+            //var offices = db.Offices.Include(o => o.Employee);
             return View(await offices.ToListAsync());
         }
 
