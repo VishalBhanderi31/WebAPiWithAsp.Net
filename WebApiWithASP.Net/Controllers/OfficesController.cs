@@ -36,7 +36,15 @@ namespace WebApiWithASP.Net.Controllers
         [ResponseType(typeof(OfficeDetailDTO))]
         public async Task<IHttpActionResult> GetOffice(int id)
         {
-            Office office = await db.Offices.FindAsync(id);
+            var office = await db.Offices.Include(x => x.Employee).Select(x =>
+            new OfficeDetailDTO()
+            {
+                Id = x.Id,
+                Location = x.Location,
+                EmployeeName = x.Employee.Name
+            }).SingleOrDefaultAsync(b => b.Id == id);
+
+            //Office office = await db.Offices.FindAsync(id);
             if (office == null)
             {
                 return NotFound();

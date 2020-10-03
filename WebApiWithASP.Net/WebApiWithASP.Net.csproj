@@ -175,6 +175,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Office.cs" />
+    <Compile Include="Models\OfficeDetailDTO.cs" />
+    <Compile Include="Models\OfficeDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
