@@ -18,4 +18,4 @@ namespace WebApiWithASP.Net.Models
         //Navigation Property
         public Employee Employee { get; set; }
     }
-}
+} 

@@ -21,5 +21,7 @@ namespace WebApiWithASP.Net.Data
         }
 
         public System.Data.Entity.DbSet<WebApiWithASP.Net.Models.Employee> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<WebApiWithASP.Net.Models.Office> Offices { get; set; }
     }
 }
