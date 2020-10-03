@@ -163,6 +163,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Offices1Controller.cs" />
     <Compile Include="Controllers\OfficesController.cs" />
     <Compile Include="Data\WebApiWithASPNetContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -229,6 +230,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Offices1\Create.cshtml" />
+    <Content Include="Views\Offices1\Delete.cshtml" />
+    <Content Include="Views\Offices1\Details.cshtml" />
+    <Content Include="Views\Offices1\Edit.cshtml" />
+    <Content Include="Views\Offices1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
