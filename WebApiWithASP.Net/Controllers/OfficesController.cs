@@ -19,13 +19,21 @@ namespace WebApiWithASP.Net.Controllers
         private WebApiWithASPNetContext db = new WebApiWithASPNetContext();
 
         // GET: api/Offices
-        public IQueryable<Office> GetOffices()
+        public IQueryable<OfficeDTO> GetOffices()
         {
-            return db.Offices;
+            var offices = from x in db.Offices
+                          select new OfficeDTO()
+                          {
+                              Id = x.Id,
+                              EmployeeName = x.Employee.Name
+                          };
+
+            return offices;
+            //return db.Offices;
         }
 
         // GET: api/Offices/5
-        [ResponseType(typeof(Office))]
+        [ResponseType(typeof(OfficeDetailDTO))]
         public async Task<IHttpActionResult> GetOffice(int id)
         {
             Office office = await db.Offices.FindAsync(id);
