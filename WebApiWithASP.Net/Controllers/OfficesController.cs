@@ -11,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using WebApiWithASP.Net.Data;
 using WebApiWithASP.Net.Models;
+using WebApiWithASP.Net.CacheHandler;
 
 namespace WebApiWithASP.Net.Controllers
 {
@@ -19,6 +20,7 @@ namespace WebApiWithASP.Net.Controllers
         private WebApiWithASPNetContext db = new WebApiWithASPNetContext();
 
         // GET: api/Offices
+        [CacheHandler.CacheFilter(Duration=300)]
         public IQueryable<OfficeDTO> GetOffices()
         {
             var offices = from x in db.Offices
