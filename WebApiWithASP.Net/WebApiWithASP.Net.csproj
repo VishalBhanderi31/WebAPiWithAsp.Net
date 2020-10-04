@@ -164,6 +164,7 @@
     <Compile Include="CacheHandler\CacheFilter.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewOfficesController.cs" />
     <Compile Include="Controllers\Offices1Controller.cs" />
     <Compile Include="Controllers\OfficesController.cs" />
     <Compile Include="Data\WebApiWithASPNetContext.cs" />
