@@ -89,3 +89,4 @@ F:\Vishal\WebAPIDemo\WebApiWithASP.Net\WebApiWithASP.Net\obj\Debug\WebApiWithASP
 F:\Vishal\WebAPIDemo\WebApiWithASP.Net\WebApiWithASP.Net\obj\Debug\WebApiWithASP.Net.csprojAssemblyReference.cache
 F:\Vishal\WebAPIDemo\WebApiWithASP.Net\WebApiWithASP.Net\obj\Debug\WebApiWithASP.Net.Migrations.InitialMigration.resources
 F:\Vishal\WebAPIDemo\WebApiWithASP.Net\WebApiWithASP.Net\obj\Debug\WebApiWithASP.Net.csproj.GenerateResource.cache
+F:\Vishal\WebAPIDemo\WebApiWithASP.Net\WebApiWithASP.Net\obj\Debug\WebApiWithASP.Net.Migrations.AddNewOfficeTable.resources

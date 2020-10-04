@@ -174,6 +174,10 @@
     <Compile Include="Migrations\202010031014143_InitialMigration.Designer.cs">
       <DependentUpon>202010031014143_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010040946539_AddNewOfficeTable.cs" />
+    <Compile Include="Migrations\202010040946539_AddNewOfficeTable.Designer.cs">
+      <DependentUpon>202010040946539_AddNewOfficeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\NewOffice.cs" />
@@ -273,6 +277,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202010031014143_InitialMigration.resx">
       <DependentUpon>202010031014143_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010040946539_AddNewOfficeTable.resx">
+      <DependentUpon>202010040946539_AddNewOfficeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
